@@ -26,7 +26,7 @@ export class SystemUserAuthMiddleware implements NestMiddleware {
 
       next();
     } catch (e) {
-      console.log(e);
+      console.log(e.message);
       throw new UnauthorizedException();
     }
   }

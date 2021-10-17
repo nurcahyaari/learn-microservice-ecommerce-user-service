@@ -42,7 +42,7 @@ export class SystemUsersService implements SystemUsersServiceInterface {
       id: user.system_user_id,
       token_type: 'access_token',
       user: user.name,
-      role: 'customers',
+      role: 'admin',
       exp: GenerateTokenExpTime(10000),
     };
 
@@ -50,7 +50,7 @@ export class SystemUsersService implements SystemUsersServiceInterface {
       id: user.system_user_id,
       token_type: 'refresh_token',
       user: user.name,
-      role: 'customers',
+      role: 'admin',
       exp: GenerateTokenExpTime(36000),
     };
 
